@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Daniel Chandler">
+    <meta name="description" content="W3 Bio | Main Page-About Me">
+    <title>W3 Bio | About Me</title>
+
+    <style>
+
+        /*in here we write in CSS
+
+        Selecting in CSS & Javascript: select specific element(s) on a page
+
+            *by element/tag type    ex: body, div, p, h1
+            *by ID attribute        ex: #wrapper,#nav,#footer  id="wrapper" id="nav" id="footer"
+            *by Class attribute     ex: .images, .display, .info   class="images" class="display info"
+        */
+
+        div{
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        #wrapper{
+            background-color: rgb(170, 170, 170);
+            width: 900px;
+            margin: auto;
+        }
+
+        .border{
+            border: 2px solid black;
+        }
+
+        .link_box{
+            background-color: rgb(144, 143, 143);
+            color: blue;
+            text-decoration: none;
+            border: 2px solid rgb(110, 118, 145);
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        .image{
+            border: 0px;
+            padding: initial;
+            margin: initial;
+        }
+
+    </style>
+
+</head>
+<body style="background-color:darkslategray;">
+    
+    <div id="wrapper">
+
+        <div id="header" class="border">
+
+            <h1 id="title" class="fancy">About Me</h1>
+
+        </div><!--#header-->
+
+        <div id="nav" class="border"> 
+
+            <a class="link_box" href="index.html">HOME/ABOUT ME</a>
+            <a class="link_box" href="schools.html">SCHOOLS</a>
+            <a class="link_box" href="hobbies.html">HOBBIES</a>
+            
+            <br>
+
+            <a class="link_box" href="https://starwars.fandom.com/wiki/Main_Page" target="_blank">STAR WARS WIKI</a>
+            <a class="link_box" href="#footer">BOTTOM OF PAGE</a>
+
+        </div><!--#nav-->
+
+        <div id="main-content" class="border">
+
+            <h2>Hobbies</h2>
+
+            <p>
+                In my free time, I have a <b>diverse</b> range of hobbies that keep me both <u>mentally</u> and <u>physically</u> active.
+                Staring from no particular order is my have a passion for beekeeping. 
+                I find it both fascinating and rewarding to tend to my own colony of bees and reap the honey reward afterwords.
+                I also enjoy gaming and immerse myself in different virtual worlds.
+                Such include star wars battlefront and Stellaris.
+                When I'm not gaming, I like to tinker with computers, both hardware and the software components.
+                My love for technology extends to programming and 3D modeling, where I like to bring my ideas to life and create something tangible.
+                I am also a big Star Wars fan and enjoy everything from the movies to the books to the games.
+                One of my favorite star was ships is the <a href="https://starwars.fandom.com/wiki/Venator-class_Star_Destroyer" target="_blank">Venator</a>
+                These hobbies help me relax, and I look forward to exploring and expanding my interests in them in the future.
+                <br>
+                <br>
+                Here is a list of my hobbies, just in case you don't want to read all that.
+            </p>
+
+            <ul>
+                <li>Bee keeping</li>
+                <li>Gaming</li>
+                <li>Star Wars</li>
+                <li>programing</li>
+                <li>3D modeling</li>
+                <li>Computers</li>
+            </ul>
+
+            <h2>Gallery of 3D models I made</h2>
+
+            <div class="image">
+                <img style="width: 400px;height: 250px;" src="images/first_short.gif" alt="image of inprogress 3d animation">
+                <img style="width: 400px;height: 250px;" src="images/fork.png" alt="stylized 3d model of a fork">
+                <img style="width: 400px;height: 250px;" src="images/Lava_snek.jpg" alt="image of a lava snake">
+                <img style="width: 400px;height: 250px;" src="images/Level_1_done.jpg" alt="image of a beginner level donut done by people practicing Blender">
+                <img style="width: 400px;height: 250px;" src="images/Snek.jpg" alt="image of a 3d fat snake">
+                <img style="width: 400px;height: 250px;" src="images/wave.png" alt="image of a floor made of small black blocks that stretch for miles">
+            </div>
+
+        </div><!--#main-content-->
+
+        <div id="footer" class="border">
+
+            <p style="margin-top: 5px; margin-bottom: 0px;">&copy; Daniel Chandler | SE111.02</p>
+            <a class="link_box" href="#header">TOP OF PAGE</a>
+            <a class="link_box" href="index.html">MAIN PAGE/ABOUT ME</a>
+
+        </div><!--#footer-->
+
+    </div><!--#wrapper-->
+</body>
+</html>

@@ -25,6 +25,15 @@
             font-size: 15px;
             line-height: 30px;
         }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
         
 
     </style>
@@ -68,17 +77,29 @@
                     The movie is about Anakin receiving a new padowan, all the while stopping the CIS from doing their evil schemes.
 
                 </p>
-                
-                <img src="images/Star-wars-poster.jpg" alt="official movie poster for Star Wars: The Clone Wars (2008)"
-                style="width: 500px;" title="STAR WARS THE CLONE WARS">
-                
-                <div class="info">
+
+                <div style="text-align: center;">
+
+                    <div><!--Poster-->
+                        <img src="images/Star-wars-poster.jpg" alt="official movie poster for Star Wars: The Clone Wars (2008)"
+                        style="width: 500px;" title="STAR WARS THE CLONE WARS">
+                    </div>
+
+                    <br>
+
+                    <div><!--Video, NOTE: black border is due to original video not a wrong aspect ratio-->
+                        <iframe style="width: 500px; height: 281px;" src="https://www.youtube.com/embed/VHj8FcBCn3E" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+        
+                <div class="info" style="text-align: center;">
                     <p><b>Director:</b> Dave Filoni</p>
                     <p><b>Company Credits:</b> Lucasfilm</p>
                     <p><b>Release Date:</b> August 16, 2008</p>
-                    <p><b>Genres:</b>Animation, Action, Adventure</p>
-                    <p><b>Rating</b>6/10</p>
-                    <p><b>Runtime</b>1 hour 38 minutes</p>
+                    <p><b>Genres:</b> Animation, Action, Adventure</p>
+                    <p><b>Rating:</b> 6/10</p>
+                    <p><b>Runtime:</b> 1 hour 38 minutes</p>
                 </div><!--.info-->
                     
             </div><!--#page-content-->
@@ -88,7 +109,7 @@
         <hr>
         <div id="footer">
         
-            <img src="images/validation/index.jpeg" alt="Index validation">
+            <img class="imgbox center-fit" src="images/validation/index.jpeg" alt="Index validation">
             <hr>
             <a class="link_box" href="#header">Top of Page</a>
             <br>

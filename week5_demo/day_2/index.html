@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Chandler">
+    <meta name="description" content="Week 5 Day 1 demo">
+    <title>W5D1 | Table & Forms</title>
+    <style>
+        td{
+           border:1px solid black;
+        }
+        td input{
+            border:0;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Basic Form Demo</h1>
+
+    <h2>Form WITHOUT a Table</h2>
+
+    <!--labels are used to mach up with the input elements to be read/processed more easily in JS-->
+    <!--(for) attribute and (name & id) input element connects to the label attribute value, THESE MUST MATCH!-->
+    <!--if there are more then two inputs, a submit button/action is needed-->
+    <form>
+
+        <!--firstname-->
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname">
+
+        <br>
+
+        <!--lastname-->
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <br>
+
+        <!--email address-->
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+
+        <br>
+        <br>
+
+        <input type="submit" value="SUBMIT!">
+        <!--value = name of button/submit-->
+
+    </form>
+
+    <h2>Form with Table</h2>
+
+    <!--form comes first-->
+    <form method="GET" action="_relative path to an HTML_">
+
+        <table>
+
+            <tbody>
+
+                <!--add data to the table row by row-->
+
+                <tr><!--1st row/header-->
+                    <!--table ROW; should include one <td> for every possible column (leave the <td></td> blank when no info for that row/column)-->
+                    <!--<td> table data: one individual data cell; one td per column-->
+                    <td><!--first data cell in row (left)-->
+                        <label for="Firstname">First Name:</label>
+                    </td>
+
+                    <td><!--second data cell in row (right)-->
+                        <input type="text" name="Firstname" id="Firstname">
+                    </td>
+
+                </tr>
+
+                
+                <tr><!--2ed row-->
+
+                    <td><!--LABEL-->
+                        <label for="Lastname">Last Name:</label>
+                    </td>
+
+                    <td><!--second data cell in row (right)-->
+                        <input type="text" name="Lastname" id="Lastname" maxlength="20"><!--sets max length-->
+                    </td>
+
+                </tr>
+
+                <tr><!--3rd row-->
+
+                    <td><!--LABEL-->
+                        <label for="eMail">Email:</label>
+                    </td>
+
+                    <td><!--second data cell in row (right)-->
+                        <input type="text" name="eMail" id="eMail" required placeholder="example@email.com"><!-- (required) makes input required, (placeholder) gives a text example/appearers in the input box-->
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <label for="comments">Comments:</label>
+                    </td>
+
+                    <td>
+                        <textarea name="comments" rows="5" cols="20" placeholder="Leave your comment here....."></textarea>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <label for="faveColor">Pick Your Favorite Color:</label>
+                    </td>
+
+                    <td>
+                        <select name="faveColor">
+
+                            <option value="red">RED</option>
+                            <option value="green">GREEN</option>
+                            <option value="blue">BLUE</option>
+                            
+
+                        </select>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    
+                    <td>
+                        <label for="study">Programs of Study</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="study" value="SE">Software Engineering <br>
+                        <input type="radio" name="study" value="CYB">Cybersecurity <br>
+                        <input type="radio" name="study" value="WD">Web Development <br>
+                        <input type="radio" name="study" value="NE">Networking <br>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <label for="vehicle">Select Your Vehicle(s):</label>
+                    </td>
+
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="car">Car <br>
+                        <input type="checkbox" name="vehicle2" value="roci">Rocinate <br>
+                        <input type="checkbox" name="vehicle3" value="motorcycle">Motorcycle <br>
+                        <input type="checkbox" name="vehicle4" value="bike">Bicycle <br>
+                        <input type="checkbox" name="vehicle5" value="dragon">Dragon <br>
+                        <input type="checkbox" name="vehicle6" value="horse">Roach the Horse <br>
+                    </td>
+                    <!--name= variable name?  value = value of variable-->
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        <label for="date">Date:</label>
+                    </td>
+
+                    <td>
+                        <input type="date" name="date">
+                    </td>
+
+                </tr>
+
+
+                <tr><!--4th row-->
+
+                    <td><!--LABEL-->
+                        <!--empty-->
+                    </td>
+
+                    <td>
+                        <input type="submit" value="Submit" style="border:2;">
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Chandler">
+    <meta name="description" content="JS W6 content">
+    <title>W6 JS</title>
+</head>
+<body>
+
+    <h1>TAX CALCULATOR!</h1>
+    
+
+    <script>
+
+        // prompt for pay per hour and how many hours worked
+        var pay_per_hour = Number(prompt(`Please enter pay per hour.`))
+        var hours_worked = Number(prompt(`Now enter hours worked.`))
+
+        // do the math for calculating Tax cut to government
+        var money_made = (hours_worked*pay_per_hour).toFixed(2)
+        var tax_cut = (money_made*.2).toFixed(2)
+        var net_income = (money_made-tax_cut).toFixed(2)
+
+        // alert/pint to user the total made, Cut to government in tax, and net pay
+        alert(`Gross Pay: $${money_made}\nUncle Sam's Share: $${tax_cut}\nNet Pay: $${net_income}`)
+
+        //Print all of the same information to the console
+        console.log(`Gross Pay: $${money_made}`)
+        console.log(`Uncle Sam's Share: $${tax_cut}`)
+        console.log(`Net Pay: $${net_income}`)
+
+        </script>
+</body>
+</html>

@@ -14,6 +14,9 @@
     
 
     <script>
+        // 2 different strings, "" and '' are same, `` is a supper string
+        // only `` can be inputted into a string by using ${var}, nothing else would work ("" / '')
+        // dont need the Number() cast, java fixed that recently, Number(prompt()) is jav equivalent to pythons int(input()) 
 
         // prompt for pay per hour and how many hours worked
         var pay_per_hour = Number(prompt(`Please enter pay per hour.`))
@@ -32,6 +35,7 @@
         console.log(`Uncle Sam's Share: $${tax_cut}`)
         console.log(`Net Pay: $${net_income}`)
 
-        </script>
+    </script>
+
 </body>
 </html>

@@ -72,8 +72,8 @@
 		//var fname = document.querySelector(`#first`).value
 		//var lname = document.querySelector(`#last`).value
             var person = {
-				first:String(document.querySelector(`#first`).value),
-				last:String(document.querySelector(`#last`).value)
+				first:document.querySelector(`#first`).value,
+				last:document.querySelector(`#last`).value
             }//end of person object
 
 
@@ -105,23 +105,14 @@
 			//Loop through the objects in the people array
 			for(person_selected in people)
             {
-
-
+				output+=`<p>FIRST: ${people[person_selected].first.toUpperCase()}<br>`
+				output+=`LAST: ${people[person_selected].last.toUpperCase()}</p><hr>`
 				//Loop through each property in the object
-				for(key in people[person_selected])
-                {
-					//selecing key as string
-					key.toUpperCase()
-					output+=key
-					//The output should use the key set to uppercase using the .toUpperCase() String method as a title and the value of the key.
-					//Output will resemble:
-					//FIRST: Ivan
-					//LAST: Drago
-					//.toUpperCase()
-                }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-
-
+				//Output will resemble:
+				//FIRST: Ivan ??
+				//LAST: Drago ??
+				//.toUpperCase()      
 
 			}//end of loop going through people array to edit 'output'
 

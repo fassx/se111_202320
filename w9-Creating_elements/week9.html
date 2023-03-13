@@ -28,6 +28,19 @@
 //Using the provided week9.html write a script that loops through the array of objects and writes each object to a div.
 //The div's should have a class of ".border" that has been set by modifying the property directly through dot syntax,
 //while the id will be added using the setAttribute() method.
+	for(person in people){
+		let tempDiv = document.createElement(`div`)
+		tempDiv.className=`border` //different way of setting class as border is .className=`border`
+		tempDiv.setAttribute("id", String(person)) // another way to setting attribute
+
+		for(key in people[person]){
+		let p = document.createElement(`p`)
+		let text = document.createTextNode(`${people[person][key]}`)
+		p.appendChild(text)
+		tempDiv.appendChild(p)
+		}
+		document.body.appendChild(tempDiv) 
+	}
 </script>
 
 </html>
